@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Navbar</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Nav</a>
+        <nav>
+            <a href="#Home" class="active">Home</a>
+            <a href="#Product">Product</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+            <a onclick="showSidebar()" href="#" class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </a>
+        </nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Product">Product</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section id="Home">Home</section>
+    <section id="Product">Product</section>
+    <section id="About">About</section>
+    <section id="Contact">Contact</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
